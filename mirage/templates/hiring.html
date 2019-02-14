@@ -1,0 +1,520 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8">
+  <title>Mirage Entertainment | Application</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+{#  <link href="{% static 'img/mirage/favicon.png' %}" rel="shortcut icon">#}
+
+    <link rel="shortcut icon" href="{% static 'img/mirage/miragelogo.png' %}">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/odometer-theme-default.css' %}" />
+    <script src="{% static 'odometer.js' %}"></script>
+
+  <!-- Bootstrap CSS File -->
+{#  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">#}
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+{#  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">#}
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+{#  <link href="lib/animate-css/animate.min.css" rel="stylesheet">#}
+  <link href="{% static 'lib/animate-css/animate.min.css' %}"  rel="stylesheet">
+
+
+  <!-- Main Stylesheet File -->
+{#  <link href="css/style.css" rel="stylesheet">#}
+  <link href="{% static 'css/hire.css' %}"  rel="stylesheet">
+
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="{% url 'home' %}"><img src="{% static 'img/mirage/logo-alter.png' %}" alt="" title="" /></a>
+
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+{#          <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>#}
+{#          <li><a href="#about">About Us</a></li>#}
+{#          <li><a href="#services">What we do</a></li>#}
+{#          <li><a href="#portfolio">Portfolio</a></li>#}
+{#          <li class="menu-has-children"><a href="">Portfolio</a>#}
+{#            <ul>#}
+{#              <li><a href="#portfolio">Shows & Attractions</a></li>#}
+{#              <li><a href="#portfolio-theme">Design & Development</a></li>#}
+{#              <li><a href="#portfolio-current">Festivals & Events</a></li>#}
+{#              <li><a href="#portfolio-current">Consulting Services</a></li>#}
+{#              <li><a href="#">Drop Down 5</a></li>#}
+{#            </ul>#}
+{#          </li>#}
+{#          <li><a href="#experience">Experience</a></li>#}
+{#          <li><a href="#team">Team</a></li>#}
+{#          <li><a href="#testimonials">Clients</a></li>#}
+          <li><a href="{% url 'home' %}">Home</a></li>
+{#          <li><a href="{% url 'hire' %}" style="background-color: #691819">Hiring Now</a></li>#}
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+
+
+
+
+
+
+<form method="POST" name="email_form_with_attachment" action="https://formspree.io/danhinker@gmail.com" enctype="multipart/form-data">
+<div method="POST" name="email_form_with_attachment" action="https://formspree.io/danhinker@gmail.com" enctype="multipart/form-data">
+                                <!--form action="" method="post" enctype="multipart/form-data" id="application-form"-->
+
+                                 <div class="row">
+
+                                    <div class="col-md-6 wow fadeInLeft">
+                                         <h2 class="">Personal Info</h2>
+
+                                            <div class="" data-wow-delay=".2s">
+                                                <h4>Your Name</h4><!-- end .label -->
+                                                <div class="input">
+                                                    <input type="text" name="Your Name" id="fullname" class="detail"  value="" />
+                                                </div><!-- end input -->
+                                            <div class="context">e.g. James Smith or Mary Taylor</div><!-- end .context -->
+
+
+                                            <div class="cast_row">
+                                                <h4>Date of Birth</h4><!-- end .label -->
+                                            <div class="input">
+                                              <input name="Date of Birth" type="text" id="datepicker" class="detail" value="" />
+                                                                                          </div><!-- end input -->
+                                            <div class="context">e.g. mm / dd / yyyy</div><!-- end .context -->
+                                            </div><!-- end date of birth cast_row -->
+
+                                            <div class="cast_row">
+                                            <h4>Nationality</h4>
+                                            <div class="input">
+                                              <input name="Nationality" type="text" id="nation" class="detail"/>
+                                            </div><!-- end input -->
+                                            <div class="context">If outside of USA</div><!-- end .context -->
+                                            </div><!-- end nationality cast_row -->
+
+                                            <div class="cast_row">
+                                                <h4>Gender</h4><!-- end .label -->
+                                            <div class="unit">
+                                                <input type="radio" name="Gender" value="Male" id="male" />
+                                                Male</div><!-- end .unit -->
+
+                                            <div class="unit">
+                                              <input type="radio" name="Gender" value="Female" id="female" />
+                                              Female</div><!-- end .unit -->
+                                            </div><!-- end gender cast_row -->
+
+                                            <div class="cast_row">
+                                                <h4>Height</h4>
+                                                 <div class="input4">
+                                                    <input name="Height" type="text" id="height" class="detail4" />ft.
+                                                </div><!-- end input4 -->
+                                                <div class="input4">
+                                                    <input name="Inches" type="text" id="inches" class="detail4" />in.
+                                                </div><!-- end input4 -->
+                                            </div><!-- end height cast_row -->
+
+                                            <div class="cast_row">
+                                                <h4>Weight</h4><!-- end .label -->
+                                            <div class="input4">
+                                             <input name="Weight" type="text" id="weight" class="detail4"/>lbs.
+                                            </div>
+                                            </div><!-- end weight cast_row -->
+
+                                    </div><!-- end wrap_5  personal info -->
+
+                                    <div class="wrap_4">
+                                      <div class="text_2 color_3">
+                                            <p>We will not share your information with anyone or spam your with messages either.</p>
+                                      </div>
+
+                                    </div>
+                                  </div><!-- end grid_6 personal info -->
+
+
+                                  <div class="col-md-6">
+                                      <h2 class="header_6 text_6 color_1 bg_3 wow fadeInRight">Contact Info</h2>
+
+                                  <div class="wrap_10 wow fadeInRight" data-wow-delay=".2s">
+                                    <div class="cast_row">
+                                        <p>Your Email</p>
+                                    <div class="input">
+                                    <!-- input type="text" id="email" class="detail" name="email" / -->
+                                    <input type="text" id="Email" class="detail" name="Email" value=" "/>
+                                                                        </div><!-- end input -->
+                                    </div><!-- end .cast_row -->
+
+
+                                     <div class="cast_row">
+                                        <p>Cell Phone</p><!-- end .label -->
+                                        <div class="input">
+                                           <input name="Cell Phone" type="text" id="cell" class="detail" value="" />
+                                                                                   </div><!-- end input -->
+                                     </div><!-- end .cast_row -->
+
+                                     <div class="cast_row">
+                                         <p>Phone Number</p><!-- end .label -->
+                                         <div class="input">
+                                              <input name="Home Phone" type="text" id="phone" class="detail" />
+                                         </div><!-- end input -->
+                                     </div><!-- end .cast_row -->
+
+                                     <div class="cast_row">
+                                         <p>Address</p><!-- end .label -->
+                                         <div class="input">
+                                           <input name="Address 1" type="text" id="adr1" class="detail" value="" />
+                                                                                    </div><!-- end input -->
+                                     </div><!--end .cast_row-->
+
+                                     <div class="cast_row">
+                                         <p>Apt/Suit/Other</p>
+                                         <div class="input">
+                                         <input name="Address 2" type="text" id="adr2" class="detail" />
+                                         </div><!-- end input -->
+                                     </div><!-- end .cast_row -->
+
+                                     <div class="cast_row">
+                                         <p>City/Province</p>
+                                         <div class="input">
+                                         <input name="City" type="text" id="city" class="detail" value="" />
+                                                                                  </div><!-- end input -->
+                                    </div><!-- end .cast_row -->
+
+
+                                    <div class="cast_row">
+                                            <p>State</p>
+                                            <div class="input">
+                                            <input name="State" type="text" id="state" class="detail" value="" />
+                                    </div><!-- end input -->
+                                      </div><!-- end .cast_row -->
+
+                                      <div class="cast_row">
+                                          <p>Zip Code</p>
+                                            <div class="input">
+                                            <input name="Zip Code" type="text" id="zip" class="detail" value="" />
+                                                                                        </div><!-- end input -->
+                                      </div><!-- end .cast_row -->
+
+
+                                      <div class="cast_row">
+                                          <p>Country</p>
+                                            <div class="input">
+                                              <input name="Country" type="text" id="country" class="detail" />
+                                            </div><!-- end input -->
+                                      </div><!-- end .cast_row -->
+
+
+                                    </div><!-- end .wrap_4 wow fadeInRight info -->
+
+                                  </div><!-- end .grid_6 contact info -->
+
+                                 </div><!-- end row -->
+
+
+<!---------------- Special Skills -------------------------->
+
+                              <div class="col-md-12 wow fadeInLeft">
+                                <div class="row">
+                                      <h2 class="header_3 text_6 color_1 bg_3">Special Skills</h2>
+                                     <p class="">Fill in the number of years of experience in the following skill set.</p>
+                                </div>
+
+
+                              </div>
+<!--====================== Stunt ====================-->
+
+
+<!--====================== Acting ====================-->
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Acting</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Acting" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Water Skills ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Water Skills</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Water Skills" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Vehicles-Land ====================-->
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Vehicles-Land</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Vehicles-Land" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Vehicle-Water ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Vehicle-Water</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Vehicle-Water" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Gymnastics / Acrobat ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Gymnastics / Acrobat</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Gymnastics / Acrobat" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Weapons ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Weapons</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Weapons" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Dancing ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Dancing</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Dancing" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Singing ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Singing</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Singing" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+<!--====================== Production Skills ====================-->
+
+									<div class="grid_12 lineboth wow fadeInLeft">
+                                       <div class="row">
+                                           <div class="grid_2">
+                                         		 <div class="text_6">Production Skills</div><!-- end .text_6-->
+                                           </div><!-- end .grid_2 -->
+
+                                           <div class="grid_10">
+                  		                     <div class="cast_row">
+                                                <div class="input1">
+                                                    <input name="Production Skills" type="text" id="inches" class="detail1" /> years
+                                                </div>
+                                              </div><!-- end .cast_row -->
+                                           </div><!-- end .grid_10 details-->
+                                      </div><!-- end .stunt row -->
+                   </div><!-- end .grid_12 -->
+
+    <!--====================== Management Position ====================-->
+                                  <div class=" wow fadeInLeft wrap_6">
+                                      <div class="row">
+                                        <h2 class="header_3 text_6 color_1 bg_3">Management Positions</h2>
+                                      </div>
+                                  </div>
+                                </div>
+
+                            <div class="col-md-12 wow fadeInLeft" data-wow-delay=".2s">
+                                   <div class="row">
+                                            <div class="unit">
+                                                <input type="radio" name="Management Positions" value="Project Director" id="Project Director" />
+                                                Project Director</div><!-- end .unit -->
+
+                                            <div class="unit">
+                                              <input type="radio" name="Management Positions" value="Event Coordinator" id="Event Coordinator" />
+                                              Event Coordinator</div><!-- end .unit -->
+
+                                           <div class="unit">
+                                                  <input type="radio" name="Management Positions" value="Show Managers" id="Show Managers" />
+                                                  Show Managers</div><!-- end .unit -->
+
+                                       <div class="unit">
+                                              <input type="radio" name="Management Positions" value="Other" id="Other" />
+                                              Other</div><!-- end .unit -->
+
+                                            </div><!-- end gender cast_row -->
+                                  </div><!-- end .cast_row -->
+
+<!--====================== More Details ====================-->
+
+
+                                <div class="col-md-12 wow fadeInLeft wrap_6">
+                                  <div class="row">
+                                      <h2 class="header_3 text_6 color_1 bg_3">More Details</h2>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12 wow fadeInLeft" data-wow-delay=".2s">
+                                   <div class="row">
+                                          <div class="label2">Brief Description of any other skill sets:</div>
+                                  <!-- end .skilllabel -->
+                                    <div class="input2">
+                                      <textarea id="anyother_skills" name="Any Other Skills" class="mess" value="" /></textarea>
+                                    </div><!-- end input2 -->
+                                  </div><!-- end .cast_row -->
+
+
+
+
+                                 <div class="row">
+                                   <div class="label2">Comments:</div>
+                                  <!-- end .label -->
+                                  <div class="input2">
+                                      <textarea id="comments" name="Comments" class="mess" ></textarea>
+                                   </div><!-- end input -->
+                              </div><!-- end .cast_row -->
+
+
+                   </div><!-- end .grid_12 -->
+
+                                      <div class="submit-btn">
+                                          <div class="row">
+                                            <input type="submit" id="submit" name="Submit" value="Send Application"/>
+                                          </div>
+                                      </div><!-- end .grid_12-->
+
+                 </form>
+
+
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Mirage Entertainment Design, Inc.</strong> All Rights Reserved
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+
+
+</body>
+</html>

@@ -1,0 +1,1381 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mirage Entertainment</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+{#  <link href="{% static 'img/mirage/favicon.png' %}" rel="shortcut icon">#}
+
+    <link rel="shortcut icon" href="{% static 'img/mirage/miragelogo.png' %}">
+
+
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/odometer-theme-default.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-social.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-social.less' %}" />
+    <script src="{% static 'odometer.js' %}"></script>
+
+  <!-- Bootstrap CSS File -->
+{#  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">#}
+{#  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">#}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Libraries CSS Files -->
+{#  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">#}
+{#  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">#}
+
+{#  <link href="lib/animate-css/animate.min.css" rel="stylesheet">#}
+  <link href="{% static 'lib/animate-css/animate.min.css' %}"  rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+  <!-- Main Stylesheet File -->
+{#  <link href="css/style.css" rel="stylesheet">#}
+  <link href="{% static 'css/style.css' %}"  rel="stylesheet">
+
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>#}
+</head>
+
+<body>
+{#  <div id="preloader">#}
+{#      <div class="page-header">#}
+{#          <h1>Total Entertainment Solutions</h1>#}
+{#      </div>#}
+{#  </div>#}
+  
+<!--==========================
+  Hero Section
+============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="{% static 'img/mirage/miragelogo.png' %}" alt="" title="" /></a>
+
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">What we do</a></li>
+{#          <li><a href="#portfolio">Portfolio</a></li>#}
+          <li class="menu-has-children"><a href="">Portfolio</a>
+            <ul>
+              <li><a href="#portfolio">Shows & Attractions</a></li>
+              <li><a href="#portfolio-theme">Design & Development</a></li>
+              <li><a href="#portfolio-current">Festivals & Events</a></li>
+              <li><a href="#portfolio-current">Consulting Services</a></li>
+{#              <li><a href="#">Drop Down 5</a></li>#}
+            </ul>
+          </li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="{% url 'hire' %}" style="background-color: #691819">Hiring Now</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+
+  <section id="hero">
+    <div class="hero-container">
+
+{#        <div id="Carousel" class="carousel slide" data-ride="carousel">#}
+{#          <!-- Indicators -->#}
+{#          <ol class="carousel-indicators">#}
+{#            <li data-target="#Carousel" data-slide-to="0" class="active"></li>#}
+{#            <li data-target="#Carousel" data-slide-to="1"></li>#}
+{#            <li data-target="#Carousel" data-slide-to="2"></li>#}
+{#            <li data-target="#Carousel" data-slide-to="3"></li>#}
+{#          </ol>#}
+{##}
+{#          <!-- Wrapper for slides -->#}
+{#          <div class="carousel-inner" role="listbox">#}
+{#            <div class="item active">#}
+{#              <img src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Chania">#}
+{#            </div>#}
+{##}
+{#            <div class="item">#}
+{#              <img src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Chania">#}
+{#            </div>#}
+{##}
+{#            <div class="item">#}
+{#              <img src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Flower">#}
+{#            </div>#}
+{##}
+{#            <div class="item">#}
+{#              <img src="i{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Flower">#}
+{#            </div>#}
+{##}
+{#            <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">#}
+{#            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Previous</span>#}
+{#          </a>#}
+{#          <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">#}
+{#            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Next</span>#}
+{#          </a>#}
+{#          </div>#}
+{##}
+{#          <!-- Left and right controls -->#}
+{#        </div>#}
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="{% static 'img/mirage/slider-top/theme-park1.jpg' %}" alt="First slide">
+{#          <div class="container">#}
+            <div class="carousel-caption">
+              <h1>Create & Inspire</h1>
+            </div>
+{#          </div>#}
+        </div>
+        <div class="item">
+          <img class="second-slide" src="{% static 'img/mirage/slider-top/water-show.jpg' %}" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Build Something Beautiful</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="{% static 'img/mirage/slider-top/honcun-show.jpg' %}" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Spectacles of Brilliance</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="forth-slide" src="{% static 'img/mirage/slider-top/marvel.jpeg' %}" alt="Forth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Incredible Experiences</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+{#        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">#}
+{#          <div class="carousel-inner" role="listbox">#}
+{#            <div class="carousel-item active">#}
+{#              <img class="d-block img-fluid" src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="First slide">#}
+{#            </div>#}
+{#            <div class="carousel-item">#}
+{#              <img class="d-block img-fluid" src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Second slide">#}
+{#            </div>#}
+{#            <div class="carousel-item">#}
+{#              <img class="d-block img-fluid" src="{% static 'img/mirage/Design/parade-design/Arabian/5_Arabian_Night_CONCEPT_BACK_V1_A.jpg' %}" alt="Third slide">#}
+{#            </div>#}
+{#          </div>#}
+{#          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">#}
+{#            <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Previous</span>#}
+{#          </a>#}
+{#          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">#}
+{#            <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Next</span>#}
+{#          </a>#}
+{#        </div>#}
+
+
+
+{#      <div class="wow fadeIn">#}
+{#        <div class="hero-logo">#}
+{#          <!--<img class="" src="img/logo.png" alt="Imperial">-->#}
+{#        </div>#}
+{#        #}
+{#        <!--<h1>Welcome to Imperial studios</h1>-->#}
+{#        <img src="{% static 'img/mirage/miragelogo.png' %}">#}
+{#        <h1 style="color: #000;">Total Entertainment Solutions</h1>#}
+{#        <div class="actions">#}
+{#          <a href="#about" class="btn-get-started">Get Strated</a>#}
+{#          <a href="#services" class="btn-services">Our Services</a>#}
+{#        </div>#}
+{#      </div>#}
+    </div>
+  </section>
+  
+<!--==========================
+  Header Section
+============================-->
+<!-- #header -->
+    
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Us</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+          <div class="col-md-6 about-content">
+            <video width="100%" poster="{% static 'img/mirage/LOGOS/Mirage-Logo-2017-Small.png' %}" controls><source src="{% static 'img/mirage/mirage-reel.mp4' %}" type="video/mp4"></video>
+          </div>
+{#          <iframe width="800" src="{% static 'img/mirage/mirage-reel.mp4' %}"></iframe>#}
+        <div class="col-md-6 about-content">
+          <h2 class="about-title">Total entertainment solution</h2>
+          <p class="about-text" style="color: black; font-size: 15px;">
+              Designing, producing and operating any conceivable venue of live entertainment from small exhibits and attractions
+              to live arena shows and full theme parks. With offices in North America, Asia and Europe, we harness some of the most
+              creative and experienced talent in the industry to realize your entire project form conception fo final curtain - or
+              provide a la carte services for any particular aspect of production in between.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--==========================
+  Services Section
+============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title" id="service-title">What we do</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description" style="font-size: 18px;">Mirage Entertainment Design is a full-service entertainment design, consultancy and management company with global reach.  We have conceptualized, produced, and/or operated some of the largest world-class projects in the entertainment related industry, providing clients with personalized services from planning to deployment on a scalable basis, relative to the needs of your project (or any part thereof). Our difference is what sets up apart.  With our many years of broad based experience in conceptualizing, producing and operation, we know how all the pieces fit together to create an ultimate guest experience.  </p>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-md-6 service-item">
+{#            <i class="fa fa-desktop" aria-hidden="true" style="color: white;"></i>#}
+          <div class="service-icon"><span class="glyphicon glyphicon-pencil" aria-hidden="true" style="color: white; font-size: 24px;"></span></div>
+          <h3 class="service-title" style="font-size: 25px;">Design & Development</h3>
+          <p class="service-description" style="font-size: 20px;">We provide every (or any) aspect of project design and development from the “Blue Sky” stage through “Concept”, “Schematic Design”, “Design Development” and into “Construction Design“ along with construction management.</p>
+        </div>
+        <div class="col-md-6 service-item">
+{#            <i class="fa fa-star-o" aria-hidden="true"></i>#}
+          <div class="service-icon"><span class="glyphicon glyphicon-star-empty" aria-hidden="true" style="color: white; font-size: 24px;"></span></div>
+          <h3 class="service-title" style="font-size: 25px;">Shows & Attractions</h3>
+          <p class="service-description" style="font-size: 20px;">Our award-winning projects include some of the biggest and finest live shows in the business, as well as iconic special attractions, such as themed entertainment/shopping mall venues and children’s amusement centers.</p>
+        </div>
+        <div class="col-md-6 service-item">
+{#            <i class="fa fa-handshake-o" aria-hidden="true"></i>#}
+          <div class="service-icon"><span class="glyphicon glyphicon-user" aria-hidden="true" style="color: white; font-size: 24px;"></span></div>
+          <h3 class="service-title" style="font-size: 25px;">Consulting Services</h3>
+          <p class="service-description" style="font-size: 20px;">We provide professional advice and representation through all phases of your project, from master planning to business development strategies, feasibility studies, full scale operation, merchandising, food and beverage.  In addition, we specialize in branding, intellectual properties acquisition and IP implementation.  Our depth of experience can carry you to first-class success in the entertainment and leisure industry.</p>
+        </div>
+        <div class="col-md-6 service-item">
+{#            <i class="fa fa-flag" aria-hidden="true"></i>#}
+          <div class="service-icon"><span class="glyphicon glyphicon-flag" aria-hidden="true" style="color: white; font-size: 24px;"></span></div>
+          <h3 class="service-title" style="font-size: 25px;">Festivals & events</h3>
+          <p class="service-description" style="font-size: 20px;">Our projects also include seasonal, high-capacity festivals and event attractions at a variety of famous fairgrounds and special venues on a temporary or travelling basis.  </p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+
+  <!--==========================
+  Porfolio Section Theme Park Development
+============================-->
+
+    <section id="portfolio-theme">
+
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title" style="color: black;">Design & Development</h3>
+          <div class="section-title-divider"></div>
+{#          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>#}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" data-target="#lotus-park" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/lotus-park/Entrance-of-the-Park.jpg' %}');" href="">
+            <div class="details">
+              <h4>Lotus Park</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Sanshui, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item"  data-target="#bolong-lake" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/Bolong-Lake/Bolong-Lake.jpg' %}');" href="">
+            <div class="details">
+              <h4>Bolong Lake</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Tianjin, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item"  data-target="#yuanzhou" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign1.png' %}');" href="">
+            <div class="details">
+              <h4>Yuanzhou Park</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Yuanzhou, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+
+      <div class="col-md-3">
+          <a class="portfolio-item"  data-target="#time-alley" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/time-alley/GrandShanghai_concept_3.jpg' %}');" href="">
+            <div class="details">
+              <h4>Time Alley</h4>
+{#              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Tianjin, China</h4>#}
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+          <div id="lotus-park" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel6" data-slide-to="1"></li>
+                    <li data-target="#myCarousel6" data-slide-to="2"></li>
+                    <li data-target="#myCarousel6" data-slide-to="3"></li>
+                    <li data-target="#myCarousel6" data-slide-to="4"></li>
+                    <li data-target="#myCarousel6" data-slide-to="5"></li>
+                    <li data-target="#myCarousel6" data-slide-to="6"></li>
+                    <li data-target="#myCarousel6" data-slide-to="7"></li>
+                    <li data-target="#myCarousel6" data-slide-to="8"></li>
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Entrance-of-the-Park.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Blue-Zone.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Entrance-of-Sanshui-Lily.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Entrance-of-Sanshui-Lotus.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Sanshui-Lotus-Entrance.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/entrance.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Golden-Zone-1.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Golden-Zone-2.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/lotus-park/Purple-Zone.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>Sanshui/Lotus Park</h3>
+                            <h4>Shaping the future of international amusement</h4>
+                            <p>Coming soon, the new Lotus Park in Foshan City (Sanshui District) of Guangdong, China is destined to be one of the most exciting and innovative theme parks in Asia.  This 269,000 square meter, fantasy themed amusement park, built around a scenic, man-made lake, with an attached hotel resort and commercial district is currently under design by Mirage Entertainment as one of our premier projects.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+          <div id="bolong-lake" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+{#                    <li data-target="#myCarousel2" data-slide-to="1"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="2"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="3"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="4"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="5"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="6"></li>#}
+{#                    <li data-target="#myCarousel2" data-slide-to="7"></li>#}
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Bolong-Lake/Bolong-Lake.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>IVAS and The Vibe at Bolong Lake</h3>
+                            <h4>A comprehensive epicenter of industry, entertainment and creativity</h4>
+                            <p>Bolong Lake in Tianjin, China is a massive, monorail-connected, entertainment themed industrial park under a glass atrium.  Combining creativity, technology and enterprise in a richly themed atmosphere, it contains a residential area, hi-tech movie/television studios, broadcasting facilities, a world class art school, a performing arts center, visual art galleries, entertainment attractions, retail outlets and unique restaurants to draw visitors and top creative talent to an integrated, all-encompassing  commercial/entertainment district.  With tenants such as Universal Studios, James Cameron, and the Jim Henson Company already signed up, this revolutionary cultural/industrial hub will make Bolong Lake an iconic landmark destination.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+          <div id="yuanzhou" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel8" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel8" data-slide-to="1"></li>
+                    <li data-target="#myCarousel8" data-slide-to="2"></li>
+                    <li data-target="#myCarousel8" data-slide-to="3"></li>
+                    <li data-target="#myCarousel8" data-slide-to="4"></li>
+                    <li data-target="#myCarousel8" data-slide-to="5"></li>
+{#                    <li data-target="#myCarousel8" data-slide-to="6"></li>#}
+{#                    <li data-target="#myCarousel8" data-slide-to="7"></li>#}
+{#                    <li data-target="#myCarousel8" data-slide-to="8"></li>#}
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign1.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign2.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign3.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign4.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign5.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/yuan-zhou/YuanzhouParkDesign6.png' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>Sanshui/Lotus Park</h3>
+                            <h4>Shaping the future of international amusement</h4>
+                            <p>Coming soon, the new Lotus Park in Foshan City (Sanshui District) of Guangdong, China is destined to be one of the most exciting and innovative theme parks in Asia.  This 269,000 square meter, fantasy themed amusement park, built around a scenic, man-made lake, with an attached hotel resort and commercial district is currently under design by Mirage Entertainment as one of our premier projects.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+          <div id="time-alley" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="myCarousel9" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel9" data-slide-to="1"></li>
+                        <li data-target="#myCarousel9" data-slide-to="2"></li>
+                        <li data-target="#myCarousel9" data-slide-to="3"></li>
+                        <li data-target="#myCarousel9" data-slide-to="4"></li>
+                        <li data-target="#myCarousel9" data-slide-to="5"></li>
+                        <li data-target="#myCarousel9" data-slide-to="6"></li>
+                        <li data-target="#myCarousel9" data-slide-to="7"></li>
+                        <li data-target="#myCarousel9" data-slide-to="8"></li>
+                        <li data-target="#myCarousel9" data-slide-to="9"></li>
+                      </ol>
+
+                      <div id="carousel-design" class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/1Corridor1.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/1Corridor2.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/2Queue1.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/2Queue2.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/Atrium_4.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/ClockFactory_NongTong.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/GrandShanghai_concept_1_cm6.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/GrandShanghai_concept_3.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/Temple_1_cm3aF.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      <div class="item">
+                          <img class="first-slide" src="{% static 'img/mirage/Design/time-alley/Temple_2_cm2F.jpg' %}" alt="First slide">
+                          <div class="container">
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.carousel -->
+                        <div class="container-fluid" id="modal-area">
+                            <div class="">
+                                <h3>Sanshui/Lotus Park</h3>
+                                <h4>Shaping the future of international amusement</h4>
+                                <p>Coming soon, the new Lotus Park in Foshan City (Sanshui District) of Guangdong, China is destined to be one of the most exciting and innovative theme parks in Asia.  This 269,000 square meter, fantasy themed amusement park, built around a scenic, man-made lake, with an attached hotel resort and commercial district is currently under design by Mirage Entertainment as one of our premier projects.</p>
+                            </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+
+  </section>
+
+    
+<!--==========================
+  Porfolio Section Design
+============================-->
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Shows & Attractions</h3>
+          <div class="section-title-divider"></div>
+{#          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>#}
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <a href="" class="portfolio-item" data-target="#honcun-aju" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/Honcun-Aju/LoveDiamondSparks1.jpg' %}');">
+            <div class="details">
+              <h4>Honcun Aju</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Anhui, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-md-3">
+          <a class="portfolio-item" data-target="#flood" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/shenzhen-oct-show.jpeg' %}');" href="">
+            <div class="details">
+              <h4>The Flood of Mandrill Mountain</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Shenzheng, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" data-target="#car-show" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/carshow/_DSC8230.jpg' %}');" href="">
+            <div class="details">
+              <h4>Binhai Car Show</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Tianjin, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" data-target="#water-stunt" data-toggle="modal" style="background-image: url('{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/Shane-Fire2.jpg' %}');" href="">
+            <div class="details">
+              <h4>Strike Back</h4>
+              <h4 style="font-size: 20px; text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true" style='margin-right: 6px;'></i>Tianjin, China</h4>
+{#              <span>Alored dono par</span>#}
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="honcun-aju" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                    <li data-target="#myCarousel2" data-slide-to="3"></li>
+                    <li data-target="#myCarousel2" data-slide-to="4"></li>
+                    <li data-target="#myCarousel2" data-slide-to="5"></li>
+                    <li data-target="#myCarousel2" data-slide-to="6"></li>
+{#                    <li data-target="#myCarousel2" data-slide-to="7"></li>#}
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Honcun-Aju/DSC_9057.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="second-slide" src="{% static 'img/mirage/Design/Honcun-Aju/DSC_9212.jpg' %}" alt="Second slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="third-slide" src="{% static 'img/mirage/Design/Honcun-Aju/DSC_9357.jpg' %}" alt="Third slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="forth-slide" src="{% static 'img/mirage/Design/Honcun-Aju/Lotus4.jpg' %}" alt="Forth slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="forth-slide" src="{% static 'img/mirage/Design/Honcun-Aju/Ship1.jpg' %}" alt="Forth slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="forth-slide" src="{% static 'img/mirage/Design/Honcun-Aju/LoveDiamondSparks1.jpg' %}" alt="Forth slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="forth-slide" src="{% static 'img/mirage/Design/Honcun-Aju/WaterCurtain1.jpg' %}" alt="Forth slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>Honcun Aju</h3>
+                            <h4>Capturing the legendary spirit of the Anhui Women</h4>
+                            <p>A beautiful water show extravaganza performed nightly at a fabulous 2,000 seat outdoor theater in the scenic Yellow Mountains of Anhui, China – a destination long favored by regional artists and painters. Based on a traditional legend about the local women, this lyrical production is considered to be one of the most famous attractions at this popular resort area.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="flood" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+                    <li data-target="#myCarousel3" data-slide-to="2"></li>
+                    <li data-target="#myCarousel3" data-slide-to="3"></li>
+                    <li data-target="#myCarousel3" data-slide-to="4"></li>
+                    <li data-target="#myCarousel3" data-slide-to="5"></li>
+                    <li data-target="#myCarousel3" data-slide-to="6"></li>
+{#                    <li data-target="#myCarousel2" data-slide-to="7"></li>#}
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6790small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6795small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6824small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6860small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6875small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/IMG_6886small.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/The-Flood-of-Mandrill-Mountain/shenzhen-oct-show.jpeg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>The Flood of Mandrill Mountain</h3>
+                            <h4Thrills and spills with a tsunami of a finish!</h4>
+                            <p>A spectacular water stunt show that has been wowing audiences at the OCT East Theme Park in Shensen, China since 2009.  In an updated version of this classic pirate tale, freestyle jet-ski and watercraft action combines with high flying, high diving stunt work, explosive fire and water effects, a full-sized shipwreck and a heart stopping motorcycle jump over a collapsing bridge…all leading up to one of the most jaw-dropping climaxes in the business:  a giant, roaring flood, as untold tons of rushing water cascade down the mountainside.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="car-show" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel4" data-slide-to="1"></li>
+                    <li data-target="#myCarousel4" data-slide-to="2"></li>
+                    <li data-target="#myCarousel4" data-slide-to="3"></li>
+                    <li data-target="#myCarousel4" data-slide-to="4"></li>
+                    <li data-target="#myCarousel4" data-slide-to="5"></li>
+                    <li data-target="#myCarousel4" data-slide-to="6"></li>
+                    <li data-target="#myCarousel4" data-slide-to="7"></li>
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8230.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8143.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8348.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8364.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8413.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/_DSC8462.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/CarShow3exsm.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/carshow/CarShow12exsm.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.carousel -->
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>Binhai Car Show</h3>
+                            <h4>Lightning fast action and thundering engines.</h4>
+                            <p>The stunt driving show at the Binhai Hangkong Mujian theme park in Tianjin, China, delivers fast action, explosive thrills and pulse-pounding excitement to live audiences on a daily basis.  Featuring 5 high performance stunt cars, 2 specialized crash cars, 3 motorcycles, and a quad UTV, all handled by world class stunt drivers to the theme of a cops and crime drama, the Binhai Car Show is the largest production of its kind in Northeast Asia.</p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="water-stunt" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel5" data-slide-to="1"></li>
+                    <li data-target="#myCarousel5" data-slide-to="2"></li>
+                    <li data-target="#myCarousel5" data-slide-to="3"></li>
+                    <li data-target="#myCarousel5" data-slide-to="4"></li>
+                  </ol>
+
+                  <div id="carousel-design" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/Boat-with-fire.JPG' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/Jon-Air-Ram.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/PA111543.JPG' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/Shane-Fire.JPG' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                  <div class="item">
+                      <img class="first-slide" src="{% static 'img/mirage/Design/Strike-Back-Water-Stunt-Show/Shane-Fire2.jpg' %}" alt="First slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    </div>
+                </div>
+                    <div class="container-fluid" id="modal-area">
+                        <div class="">
+                            <h3>STRIKE BACK</h3>
+                            <h4>Make-believe warfare on a real aircraft carrier</h4>
+                            <p>“Strike Back” is a large-scale water stunt show, featuring an actual aircraft carrier (formerly of the Russian Navy) at the Binhai Hangkong Mujian theme park in Tianjin, China.  Besides the massive carrier vessel, this spectacular production involves 15 performers, 8 watercraft, 1 motor vehicle and a mini-submarine in an action-packed battle scenario.  </p>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+  <!--==========================
+  Festivals and events
+============================-->
+
+      <section id="festivals" class="">
+
+        <div class="container wow fadeInUp">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">Festivals and Events</h3>
+              <div class="section-title-divider"></div>
+            </div>
+          </div>
+
+            <div class="row">
+            <div class="col-md-6">
+              <div class="portfolio-item" style="background-image: url('{% static 'img/mirage/winterfest/WinterFestGeneric.png' %}');" href="">
+              </div>
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: black">Winter Festival</h2>
+                <h3 style="color: black">SOCAL'S ULTIMATE WINTER EXPERIENCE</h3>
+                <p style="color: black; font-size: 20px">Featuring ice tubing, a two million light walk-through show,
+                    ice skating, snow play with real snow blown in daily, nightly Christmas tree lighting ceremony,
+                    carnival rides, festive entertainment, seasonal eateries, visits with Santa and so much more.</p>
+                <a href="https://winterfestoc.com/" style="text-decoration: underline; font-size: 15px;"><span class="glyphicon glyphicon-share-alt" aria-hidden="true" style="margin-right: 10px;"></span>Visit WinterFest Website</a>
+{#                <i class="fa fa-link" aria-hidden="true" style="padding-right: 10px;"></i>#}
+            </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+<!--==========================
+  Company Stats
+============================-->
+  <section id="experience">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">Our Experience</h3>
+              <div class="section-title-divider"></div>
+{#              <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>#}
+            </div>
+        </div>
+        <div class="row" id="odometer-section" style="text-align: center;">
+              <div id="logo" class="pull-left col-lg-3">
+                <a href="#hero"><img src="{% static 'img/mirage/miragelogo.png' %}" alt="" title="" /></a>
+
+                <!-- Uncomment below if you prefer to use a text image -->
+                <!--<h1><a href="#hero">Header 1</a></h1>-->
+              </div>
+            <div class="col-lg-3" style="margin-top: 40px;">
+                <h1 style="color: #932123; font-size: 50px;"><div id="odometer" class="odometer odometer_number_one">00</div><span style="color: #1C194A;"><br>years of experience</span></h1>
+                <script>
+                    var myVar = setInterval(myTimer, 1000);
+
+                    function myTimer() {
+                        setTimeout(function(){
+                            odometer.innerHTML = 27
+                            $('.odometer_number_one').html('27')
+                        }, 300);
+                    }
+
+                </script>
+            </div>
+
+            <div class="col-lg-3" style="margin-top: 40px;">
+                <h1 style="color: #932123; font-size: 50px;"><div id="odometer2" class="odometer odometer_number_two">000</div><br><span style="color: #1C194A;">completed projects</span></h1>
+                <script>
+                    setTimeout(function(){
+                        $('.odometer_number_two').html('425');
+                    }, 1500);
+                </script>
+            </div>
+
+            <div class="col-lg-3" style="margin-top: 40px;">
+                <h1 style="color: #932123; font-size: 50px;"><div id="odometer2" class="odometer odometer_number_three">000</div><span style="color: #932123;"> +</span><span style="color: #1C194A;"> performances</span></h1>
+                <script>
+                    setTimeout(function(){
+                        $('.odometer_number_three').html('1000000');
+                    }, 1500);
+                </script>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+  </section>
+
+
+<!--==========================
+  consult services
+============================--> 
+{#  <section id="testimonials">#}
+{#    <div class="container wow fadeInUp">#}
+{#      <div class="row">#}
+{#        <div class="col-md-12">#}
+{#          <h3 class="section-title">Current Projects</h3>#}
+{#          <div class="section-title-divider"></div>#}
+{#          <p class="section-description">These are the big projects we are currently working on</p>#}
+{#        </div>#}
+{#      </div>#}
+{#      #}
+{#      <div class="row">#}
+{#        <div class="col-md-12">#}
+{#          <div class="profile">#}
+{#            <div class="pic"><img src="{% static 'img/mirage/current-project.jpg' %}" alt=""></div>#}
+{#            <h4>3G</h4>#}
+{#            <span>robert:some text here</span>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#      <div class="row">#}
+{#        <div class="col-md-12">#}
+{#          <div class="quote">#}
+{#              robert:maybe a paragraph here#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="row">#}
+{#        <div class="col-md-9">#}
+{#          <div class="quote">#}
+{#            more text here more text here#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-md-3">#}
+{#          <div class="profile">#}
+{#            <div class="pic"><img src="{% static 'img/mirage/current-project-2.png' %}" alt=""></div>#}
+{#            <h4>put a title here</h4>#}
+{#            <span>introduction here (optional)</span>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#      #}
+{#    </div>#}
+{#  </section>#}
+    <section id="consult" class="">
+
+        <div class="container wow fadeInUp">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">Consulting Services</h3>
+              <div class="section-title-divider"></div>
+            </div>
+          </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="portfolio-item" style="background-image: url('{% static 'img/mirage/consult/businessconsulting.jpeg' %}');" href="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p style="color: black; font-size: 18px;">Mirage Entertainment Design provides the professional advice and representation that will smooth your
+                            way through the obstacles and challenges associated with any project.  Our depth of knowledge and experience
+                            in the entertainment field will carry you over the many pitfalls on your way to the realization of your dreams.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Feasibility Studies:</h3>
+                        <p style="color: black; font-size: 18px;">We help you to compile and analyze the data required for the initiation and ultimate success of any live entertainment or leisure project.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Business Planning:</h3>
+                        <p style="color: black; font-size: 18px;">Our expertise in planning and development will help you to achieve the right business model for profitability.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Operational Advice:</h3>
+                        <p style="color: black; font-size: 18px;">Whether you are a new or existing operator, we can provide you with innovative solutions for today’s business challenges.  From turn-key projects to focused problem solving, our services are scalable to your needs.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>IP Acquisition:</h3>
+                        <p style="color: black; font-size: 18px;">Our Industry connections and know-how can assist you in the creation of original intellectual properties or the acquisition and licensing of established intellectual properties to enhance the popular appeal of your project.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Marketing Strategies:</h3>
+                        <p style="color: black; font-size: 18px;">If you build a better mousetrap, the world will beat a path to your door – but only if they know about it.  We can help make this happen with the development of effective marketing and publicity strategies. </p>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+<!--==========================
+  Team Section
+============================-->    
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Team</h3>
+          <div class="section-title-divider"></div>
+{#          <p class="section-description" style="color: white; font-size: 20px;">Meet the Team</p>#}
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="{% static 'img/mirage/team/Characature-Charlie.jpg' %}" alt=""></div>
+            <h4 class="member-name-odd">CHARLIE KAO</h4>
+            <span>
+                As co-founding President of Mirage Entertainment, and former CEO of Pan Asia American Entertainment,
+              Charlie Kao has over 20 years experience in motion picture and live entertainment.
+              His extensive contacts in Asia and America a ord Mirage a  rm business foothold on
+              both sides of the Pacific and around the world.
+            </span>
+
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="{% static 'img/mirage/team/Charicature-Brad.jpg' %}" alt=""></div>
+            <h4 class="member-name-even">BRAD BILLINGTON</h4>
+            <span>
+              Through his foreign connections with the studios,
+              Brad Billington introduced live shows and attractions
+              from the West to Asia. From the  rst Western Cowboy show
+              through today Brad has brought through Mirage Entertainment
+              over 200 live show productions and over 300,000 performances
+              to audiences worldwide.
+            </span>
+
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="{% static 'img/mirage/team/Charicature-John.jpg' %}" alt=""></div>
+            <h4 class="member-name-odd">JOHN KAO</h4>
+            <span>
+                John is currently Vice President and CFO of Mirage. From 1997,
+              John took responsibility of completing performance production and
+              management within rigorous time schedule and setting annual
+              financial targets and ensuring that company is growing as well
+              as planning.
+            </span>
+
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="{% static 'img/mirage/team/characature-David.jpg' %}" alt=""></div>
+            <h4 class="member-name-even">DAVID DRAVES </h4>
+            <span>
+              Hailing from a family of Olympic divers, David Draves brings his
+              considerable diving, stunt performing and stunt coordinating
+              experience to Mirage Entertainment. Since 1998, with over 150
+              productions to his credit, he plans and oversees all live
+              entertainment for Mirage, worldwide.
+            </span>
+
+          </div>
+        </div>
+        
+      </div>  
+    </div>
+  </section>
+
+
+  <!--==========================
+  Clients
+============================-->
+  <section id="client" class="clients">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Clients</h3>
+          <div class="section-title-divider"></div>
+{#          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>#}
+        </div>
+      </div>
+
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="{% static 'img/mirage/LOGOS/Six_Flags_logo.png' %}">
+              </div>
+                <div class="col-md-3">
+                  <img src="{% static 'img/mirage/LOGOS/Evergrande_Group_logo.png' %}">
+              </div>
+              <div class="col-md-3">
+                  <img src="{% static 'img/mirage/LOGOS/OCT-Logo.png' %}">
+              </div>
+              <div class="col-md-3">
+                  <img src="{% static 'img/mirage/LOGOS/SeaWorld_San_Diego_logo.png' %}">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4">
+                <img src="{% static 'img/mirage/LOGOS/Shanghai_Disney_Resort_logo.png' %}">
+              </div>
+              <div class="col-lg-4">
+                <img src="{% static 'img/mirage/LOGOS/The_Jim_Henson_Company_logo_svg.png' %}">
+              </div>
+              <div class="col-lg-4">
+                <img src="{% static 'img/mirage/LOGOS/WandaLogo.png' %}">
+              </div>
+          </div>
+    </div>
+  </section>
+    
+<!--==========================
+  Contact Section
+============================--> 
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+{#          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>#}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 15px; color: #932123"></span>1855 West Katella Avenue, Suite #255, Orange, CA 92867</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <p><span class="glyphicon glyphicon-envelope" style="margin-right: 15px; color: #932123"></span>info@mirageent.com</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+            <p><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 15px; color: #932123"></span>+1 (714) 855-1188</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <p>Orange  |  Beijing  |  Shanghai  |  Tianjin  |  Taipei</p>
+        </div>
+      </div>
+
+      <div class="row">
+            <div class="social">
+              <a href="https://www.facebook.com/Mirageent"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/mirage-entertainment-inc-99505569"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCXDeWYimE8qbeHcfEHSDw3Q"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.instagram.com/mirageentertainmentinc/"><i class="fa fa-instagram"></i></a>
+            </div>
+      </div>
+      
+{#      <div class="row">#}
+{#        <div class="col-md-12">#}
+{#          <div class="info">#}
+{#            <div>#}
+{#              <i class="fa fa-map-marker"></i>#}
+{#              <p>A108 Adam Street<br>New York, NY 535022</p>#}
+{#            </div>#}
+{##}
+{#            <div>#}
+{#              <i class="fa fa-envelope"></i>#}
+{#              <p>info@example.com</p>#}
+{#            </div>#}
+{##}
+{#            <div>#}
+{#              <i class="fa fa-phone"></i>#}
+{#              <p>+1 5589 55488 55s</p>#}
+{#            </div>#}
+{##}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+
+
+    </div>
+  </section>
+  
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Mirage Entertainment Design, Inc.</strong> All Rights Reserved
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+{#  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>#}
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'lib/morphext/morphext.min.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/stickyjs/sticky.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.js' %}"></script>
+
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  
+    
+</body>
+</html>
