@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fgr^yt0u)rfg4cm%8bn)^s$9o7^%_5^=lo0g=mmp2#wpst_w3+'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -125,10 +125,6 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
-
-AWS_ACCESS_KEY_ID = 'AKIAIDXGVJEPJZVHBQFA'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'miragemedia'
 
 if Online:
     S3_URL = 'https://%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
