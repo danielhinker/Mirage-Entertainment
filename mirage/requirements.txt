@@ -3,7 +3,7 @@ awsebcli==3.10.1
 blessed==1.14.2
 boto==2.46.1
 botocore==1.5.46
-cement==2.8.2
+cement==3.0.14
 colorama==0.3.7
 Django==1.11.1
 django-smtp-ssl==1.0
