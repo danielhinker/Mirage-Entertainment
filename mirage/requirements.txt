@@ -5,7 +5,7 @@ boto==2.46.1
 botocore==1.5.46
 cement==2.8.2
 colorama==0.3.7
-Django==1.11.1
+Django==4.2.29
 django-smtp-ssl==1.0
 django-storages==1.5.2
 docker-py==1.7.2
